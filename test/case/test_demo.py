@@ -79,7 +79,7 @@ def setup_function(request):
 
 
 @pytest.mark.demo
-class TestTemplate:
+class TestDemo:
     @staticmethod
     def test_demo_1(setup_session):  # Using session hook
         res = http.get(home_page_path)
