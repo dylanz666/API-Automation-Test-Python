@@ -60,9 +60,9 @@ And run for not demo class:
 What are "-v","-q","-s","-x" for: https://www.jianshu.com/p/a754e3d47671
 
 # Specification
-#####1.The test file name must start with "test_";
-#####2.The test class name must start with "Test" and should not have int() in it;
-#####3.The test function name must start with "test_"
+1.The test file name must start with "test_";
+2.The test class name must start with "Test" and should not have int() in it;
+3.The test function name must start with "test_"
 
 # How to clean pycache
 Use below command in your project:
