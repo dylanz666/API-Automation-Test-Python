@@ -17,5 +17,5 @@ class TestHomeResource:
         assert res.status_code == 200
 
     def test_get_home_api_2(self):
-        res = http.get()
+        res = http.get(home_page_path)
         assert res.status_code == 200

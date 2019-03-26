@@ -102,20 +102,20 @@ class TestDemo:
 
     @staticmethod
     def test_demo_5(setup_class):  # Using class hook
-        res = http.get()
+        res = http.get(home_page_path)
         assert res.status_code == 200
 
     @staticmethod
     def test_demo_6(setup_class):  # Using class hook, this actually not call class hook again
-        res = http.get()
+        res = http.get(home_page_path)
         assert res.status_code == 200
 
     @staticmethod
     def test_demo_7(setup_function):  # Using function hook
-        res = http.get()
+        res = http.get(home_page_path)
         assert res.status_code == 200
 
     @staticmethod
     def test_demo_8(setup_function):  # Using function hook again
-        res = http.get()
+        res = http.get(home_page_path)
         assert res.status_code == 200
