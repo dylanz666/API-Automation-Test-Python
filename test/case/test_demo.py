@@ -80,42 +80,34 @@ def setup_function(request):
 
 @pytest.mark.demo
 class TestDemo:
-    @staticmethod
-    def test_demo_1(setup_session):  # Using session hook
+    def test_demo_1(self, setup_session):  # Using session hook
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_2(setup_session):  # Using session hook, this actually not call session hook again
+    def test_demo_2(self, setup_session):  # Using session hook, this actually not call session hook again
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_3(setup_module):  # Using module hook
+    def test_demo_3(self, setup_module):  # Using module hook
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_4(setup_module):  # Using module hook, this actually not call module hook again
+    def test_demo_4(self, setup_module):  # Using module hook, this actually not call module hook again
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_5(setup_class):  # Using class hook
+    def test_demo_5(self, setup_class):  # Using class hook
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_6(setup_class):  # Using class hook, this actually not call class hook again
+    def test_demo_6(self, setup_class):  # Using class hook, this actually not call class hook again
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_7(setup_function):  # Using function hook
+    def test_demo_7(self, setup_function):  # Using function hook
         res = http.get(home_page_path)
         assert res.status_code == 200
 
-    @staticmethod
-    def test_demo_8(setup_function):  # Using function hook again
+    def test_demo_8(self, setup_function):  # Using function hook again
         res = http.get(home_page_path)
         assert res.status_code == 200
