@@ -26,15 +26,15 @@
 # How to run the test?
 * __Run all test cases__: 
 ```bash
-    $ pytest --html=report.html
+    $ pytest -s --html=report.html
 ``` 
 * __Run a folder's cases__:(Such as "test" folder) 
 ```bash
-    $ pytest test --html=report.html
+    $ pytest -s test --html=report.html
 ``` 
 * __Run a file's cases__: 
 ```bash
-    $ pytest test/case/home/test_home_resource.py --html=report.html
+    $ pytest -s test/case/home/test_home_resource.py --html=report.html
 ``` 
 * __Run specific class__: 
 Add a flag like "@pytest.mark.demo" to the head of your test class/test function and execute below command in project:
