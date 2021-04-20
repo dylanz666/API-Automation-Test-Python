@@ -7,7 +7,7 @@ idna==2.8
 logging3==0.0.2
 more-itertools==6.0.0
 pluggy==0.9.0
-py==1.8.0
+py==1.10.0
 pycmd==1.2
 pytest==4.3.1
 pytest-html==1.20.0
